@@ -201,7 +201,7 @@
  */
 }
 
-#road_label [class='main'] {
+#road_label [class='main'][zoom>=14] {
   text-name: @name;
   text-placement: line;  // text follows line path
   text-face-name: @sans_md; 

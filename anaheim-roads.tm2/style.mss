@@ -19,7 +19,8 @@
   
   // casing/outlines & single lines
   ::case[zoom>=6]['mapnik::geometry_type'=2] {
-    [class='main'] {
+    [class='main']
+      {
       line-join:round;
       line-width:0;
       line-color: white;//mix(@main, #800, 75);
@@ -67,7 +68,7 @@
   // fill/inlines
   ::fill[zoom>=6]['mapnik::geometry_type'=2] {
  
-    [class='main'][zoom>=8] {
+    [class='main'][name=~'.*Harbor.*|.*Katella.*|.*Anaheim.*|.*Manchester.*|.*Chapman .*|.*Garden Grove.*|.*Main.*|.*Ball.*|.*La Palma.*'][zoom>=8] {
       line-join:round;
       #road, #bridge { line-cap: round; }
       line-color: @street;

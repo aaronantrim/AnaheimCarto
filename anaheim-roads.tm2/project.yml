@@ -11,9 +11,9 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -117.924
-  - 33.8188
-  - 15
+  - -117.9195
+  - 33.8092
+  - 13
 description: ''
 format: "png8:m=h"
 interactivity_layer: ''
@@ -21,7 +21,7 @@ layers: null
 maxzoom: 22
 minzoom: 0
 name: Anaheim roads
-source: "mapbox:///mapbox.mapbox-streets-v5"
+source: "mapbox:///mapbox.mapbox-streets-v5,trilliumtransit.11blj2pr"
 styles: 
   - style.mss
 template: ''

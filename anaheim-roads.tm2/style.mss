@@ -15,6 +15,37 @@
 // The main road style is for all 3 road layers and divided into 2 main
 // attachments. The 'case' attachment is 
 
+#overpass-turbo.eu_export {
+    line-join:round;
+     line-cap: round;
+      line-color: @street;
+      #tunnel { line-color:lighten(@main,4); }
+      [zoom>=8] { line-width:0.5; }
+      [zoom>=10] { line-width:1; }
+      [zoom>=13] { line-width:1.5; }
+      [zoom>=14] { line-width:2.5; }
+      [zoom>=15] { line-width:3.5; }
+      [zoom>=16] { line-width:6; }
+  
+   ::fill[zoom>=6]['mapnik::geometry_type'=2] {
+ 
+    [class='main'][zoom>=8] {
+      line-join:round;
+      #road, #bridge { line-cap: round; }
+      line-color: @street;
+      #tunnel { line-color:lighten(@main,4); }
+      [zoom>=8] { line-width:0.5; }
+      [zoom>=10] { line-width:1; }
+      [zoom>=13] { line-width:1.5; }
+      [zoom>=14] { line-width:2.5; }
+      [zoom>=15] { line-width:3.5; }
+      [zoom>=16] { line-width:6; }
+  }
+    }
+      
+  }
+
+
 #road, #bridge, #tunnel {
   
   // casing/outlines & single lines
@@ -68,7 +99,7 @@
   // fill/inlines
   ::fill[zoom>=6]['mapnik::geometry_type'=2] {
  
-    [class='main'][name=~'.*Harbor.*|.*Katella.*|.*Anaheim.*|.*Manchester.*|.*Chapman .*|.*Garden Grove.*|.*Main.*|.*Ball.*|.*La Palma.*'][zoom>=8] {
+    [class='main'][osmid='4271736'][zoom>=8] {
       line-join:round;
       #road, #bridge { line-cap: round; }
       line-color: @street;

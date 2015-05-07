@@ -1,0 +1,18 @@
+On which there are stops:
+S Harbor Blvd
+W Katella Ave
+E Katella Ave
+Anaheim Way
+S Manchester Ave
+Chapman Ave
+Garden Grove Blvd
+Main St
+S Main St
+N Main St
+W Ball Rd
+E Ball Rd
+La Palma Ave
+
+On which there are not stops:
+W Orangewood Ave
+N Glassell St
